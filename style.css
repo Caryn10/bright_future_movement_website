@@ -1,0 +1,366 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background-color: #0b5d1e;
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo-area h1 {
+    font-size: 22px;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 7%;
+    background-color: #f2f8f3;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 45px;
+    color: #0b5d1e;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #0b5d1e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #084716;
+}
+
+
+/* General Sections */
+.home-section,
+.about-section,
+.gallery-section,
+.contact-section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.home-section h2,
+.about-section h2,
+.gallery-section h2,
+.contact-section h2 {
+    color: #0b5d1e;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+/* Activity Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+    color: #0b5d1e;
+}
+
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Contact */
+.contact-info {
+    margin: 25px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #0b5d1e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #084716;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0b5d1e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* Mobile Screen */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 35px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Membership Page */
+
+.membership-section {
+    padding: 60px 7%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.membership-section h2 {
+    color: #0b5d1e;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.membership-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.terms {
+    background-color: #f5f5f5;
+    padding: 30px 40px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.terms li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.declaration-box {
+    background-color: #f2f8f3;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.signature-line {
+    margin-top: 25px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+}
+
+.membership-button {
+    text-align: center;
+    margin-top: 30px;
+}
+/* Membership Registration Form */
+
+form h3 {
+    color: #0b5d1e;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0b5d1e;
+    padding-bottom: 8px;
+}
+
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+form input[type="file"] {
+    padding: 10px;
+    background-color: white;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.declaration-box h2 {
+    margin-bottom: 15px;
+}
+
+.declaration-box p {
+    margin-bottom: 15px;
+}
+/* Hero Mission Statement */
+
+.hero-mission {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
